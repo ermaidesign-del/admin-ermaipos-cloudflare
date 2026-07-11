@@ -8,7 +8,9 @@
     "build": "cd client && npm install && npm run build",
     "db:generate": "drizzle-kit generate",
     "db:push": "drizzle-kit push",
-    "seed": "tsx src/seed-run.ts"
+    "seed": "tsx src/seed-run.ts",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -26,6 +28,7 @@
     "@types/node": "^22.0.0",
     "drizzle-kit": "^0.30.0",
     "tsx": "^4.19.0",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "wrangler": "^4.110.0"
   }
 }
